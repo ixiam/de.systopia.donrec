@@ -24,10 +24,10 @@ function civicrm_api3_donation_receipt_withdraw($params) {
       // TODO: error-handling...
       // TODO: define statuus centrally
       $copies = $receipt->getCopies();
-      $result = $receipt->setStatus('WITHDRAWN');
+      $result = $receipt->setStatus('WITHDRAWN', $params);
       $deleted = $receipt->deleteOriginalFile();
       foreach ($copies as $copy) {
-        $result = $copy->setStatus('WITHDRAWN_COPY');
+        $result = $copy->setStatus('WITHDRAWN_COPY', $params);
         $deleted = $copy->deleteOriginalFile();
       }
     }else{
@@ -60,7 +60,7 @@ function civicrm_api3_donation_receipt_copy($params) {
 
   if(!empty($receipt)) {
     if($receipt->isOriginal()) {
-      $result = $receipt->createCopy();
+      $result = $receipt->createCopy($params);
     }else{
       return civicrm_api3_create_error(sprintf(ts("Only original donation receipts can be copied.", array('domain' => 'de.systopia.donrec')), $params['rid']));
     }
