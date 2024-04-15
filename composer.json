@@ -1,0 +1,12 @@
+{
+    "name": "civicrm/donrec",
+    "type": "civicrm-ext",
+    "description": "Donation Receipts",
+    "license": "AGPL-3.0-only",
+    "authors": [
+        {
+            "name": "SYSTOPIA",
+            "email": "info@systopia.de"
+        }
+    ]
+}
