@@ -113,6 +113,10 @@ msgstr "Ajustes\t"
 msgid "Donation Receipt"
 msgstr "Recibo"
 
+#: CRM/Donrec/Exporters/EmailPDF.php
+msgid "Donation Receipt.pdf"
+msgstr "Certificado de Donacion.pdf"
+
 #: CRM/Donrec/DataStructure.php
 msgid "Donation Receipt Item"
 msgstr "Recibo"
@@ -124,7 +128,7 @@ msgstr "Fichero CSV"
 #: CRM/Donrec/Exporters/CSV.php CRM/Donrec/Exporters/GroupedPDF.php
 #: CRM/Donrec/Exporters/PDF.php
 msgid "donation_receipts"
-msgstr ""
+msgstr "certificados_donacion"
 
 #: CRM/Donrec/Exporters/CSV.php
 msgid ".csv"
@@ -176,7 +180,7 @@ msgstr "PDFs individuales"
 
 #: CRM/Donrec/Exporters/PDF.php
 msgid "donation_receipts.zip"
-msgstr ""
+msgstr "certificados_donacion.zip"
 
 #: CRM/Donrec/Form/Task/ContributeTask.php CRM/Donrec/Form/Task/Create.php
 #: CRM/Donrec/Form/Task/DonrecTask.php CRM/Donrec/Page/Staging.php
@@ -358,7 +362,7 @@ msgstr "Plantilla Predeterminada"
 
 #: CRM/Donrec/Logic/Template.php
 msgid "donationreceipt-"
-msgstr ""
+msgstr "certificadodonacion-"
 
 #: CRM/Donrec/Page/Runner.php
 msgid "Creating Donation Receipts"
@@ -431,7 +435,7 @@ msgstr "Si"
 
 #: donrec.php
 msgid "DonationReceipts"
-msgstr ""
+msgstr "CertificadosDonacion"
 
 #: donrec.php
 msgid "view and create copies of receipts"
